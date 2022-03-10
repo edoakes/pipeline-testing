@@ -12,5 +12,5 @@ class Model:
 def combine(*args):
     return list(args)
 
-async def get_num(request) -> int:
+def get_num(request) -> int:
     return int(request.query_params.get("num", 1))
